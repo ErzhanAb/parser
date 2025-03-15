@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
-def get_links(pages: int = 1) -> None:
+def get_links(pages: int = 1) -> list:
     # Request for site 'mashina.kg'
     URL = 'https://m.mashina.kg/search/all/'
     response = requests.get(URL)
