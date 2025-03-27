@@ -1,7 +1,13 @@
 # Import modules
+import os
 from utils.get_links import get_links
 from utils.get_dataset import get_dataset
 from utils.read_dataset import read_dataset
+
+
+# Creating 'outputs' directory
+if not os.path.exists('outputs'):
+    os.mkdir('outputs')
 
 
 # Creating a 'links.json' file
